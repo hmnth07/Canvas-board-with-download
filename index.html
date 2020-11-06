@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skynox Canvas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Get creative and save your art!</h2>
+    <div class="container">
+        <div class="colors-container">
+            <div class="color" id="red"></div>
+            <div class="color" id="green"></div>
+            <div class="color" id="yellow"></div>
+            <div class="color" id="lightskyblue"></div>
+        </div>
+
+        <div id="board">
+            <p>Color picker: <select id="selectColor">
+                              <option id="colRed" value="red" selected="selected">Red</option>
+                              <option id="colGreen" value="green">Green</option>
+                              <option id="colYellow" value="yellow">Yellow</option>
+                              <option id="colBlue" value="lightskyblue">Blue</option>
+                            </select>
+            </p>
+
+            <div id="content">
+                <canvas id="myCanvas" width="500px" height="500px">
+                    Sorry, your browser doesn't support canvas technology.
+                </canvas>
+            </div>
+        </div><!-- END board -->
+            
+        <button onclick="display()">Download the PDF</button>
+    </div>
+</body>
+</html>

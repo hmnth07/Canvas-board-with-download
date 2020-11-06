@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+.colors-container {
+    display: flex;
+    justify-content: center;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+}
+#red {
+    border: solid 2px red;
+}
+#red:hover {
+    background-color: red;
+}
+#red:active {
+    background-color: red;
+}
+
+#green {
+    border: solid 2px green;
+}
+#green:hover {
+    background-color: green;
+}
+
+#yellow {
+    border: solid 2px rgb(228, 228, 5);
+}
+#yellow:hover {
+    background-color: rgb(228, 228, 5);
+}
+
+#lightskyblue {
+    border: solid 2px lightskyblue;
+}
+#lightskyblue:hover {
+    background-color: lightskyblue;
+}
+
+#board {
+    margin: 0 auto;
+    width: 500px;  
+}
+
+#myCanvas {
+    border: 3px solid violet;       
+}
+
+button {
+    font-size: 16px;
+    font-style: normal;
+    margin: 10px;
+    padding: 5px 20px;
+    width: 200px;
+    height: 50px;
+    background: black; 
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(65, 55, 55);
+  }
+
